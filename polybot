@@ -1,0 +1,3 @@
+POLYBOT_CONFIG=$(ls ~/.config/polybar/dots/ | fzf --reverse)
+cp -f ~/.config/polybar/dots/$POLYBOT_CONFIG ~/.config/polybar/config
+echo "config set to" $POLYBOT_CONFIG
